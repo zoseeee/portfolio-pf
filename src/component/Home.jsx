@@ -3,8 +3,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll/modules";
 
-const hiddenMask = `repeating-linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 20px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 20px)`;
-const visibleMask = `repeating-linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 20px)`;
+const hiddenMask = `repeating-linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+const visibleMask = `repeating-linear-gradient(to top, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -19,7 +19,7 @@ const Home = () => {
           ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
           : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
       }
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.7 }}
       viewport={{ once: true }}
       onViewportEnter={() => setIsInView(true)}
       onLoad={() => setIsLoaded(true)}
