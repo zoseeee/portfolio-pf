@@ -26,16 +26,7 @@ const About = () => {
             실패를 원동력으로 성장하는🚀 프론트엔드 개발자 이정은입니다?
           </p>
         </div>
-        {/* <div className="spaceman">
-          <img
-            src={process.env.PUBLIC_URL + "/assets/image/about.png"}
-            alt=""
-          />
-        </div> */}
       </div>
-      {/* <div className="earth">
-        <img src={process.env.PUBLIC_URL + "/assets/image/earth.png"} alt="" />
-      </div> */}
       <div className="toil">
         <img src={process.env.PUBLIC_URL + "/assets/image/toil.png"} alt="" />
       </div>
