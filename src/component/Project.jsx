@@ -17,6 +17,7 @@ const DB = [
     tools: "REACT / JavaScript / HTML5 / CSS / Figma / 개인작업 100%",
     font: "Noto Sans KR",
     color: "#ff0",
+    url: "https://zoseeee.github.io/YouTube/",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const DB = [
     tools: "REACT / JavaScript / HTML5 / CSS / Figma / 개인작업 100%",
     font: "Noto Sans KR",
     color: "#ff0",
+    url: "https://zoseeee.github.io/YouTube/",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const DB = [
     tools: "REACT / JavaScript / HTML5 / CSS / Figma / 개인작업 100%",
     font: "Noto Sans KR",
     color: "#ff0",
+    url: "https://zoseeee.github.io/YouTube/",
   },
 ];
 
@@ -149,11 +152,7 @@ const Project = () => {
                 </div>
               </div>
               <div className="right-box">
-                <a
-                  href="http://naver.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={slide.url} target="_blank" rel="noopener noreferrer">
                   <img
                     src={
                       process.env.PUBLIC_URL +
